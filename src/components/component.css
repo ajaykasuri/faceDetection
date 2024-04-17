@@ -1,22 +1,14 @@
-
-
-
-
-.navbar
-{
- height: 60px;
- background-color: #4064ac;
- display: flex;
- align-items: center;
- color: white;
- font-weight: bold;
- padding: 0px 100px;
- font-size: 20px;
- 
+.navbar {
+  height: 60px;
+  background-color: #4064ac;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  padding: 0px 100px;
+  font-size: 20px;
+  margin-bottom: 20px; /* Add margin bottom to create gap */
 }
-
-
-
 
 .custom-upload-button {
   display: inline-block;
@@ -45,216 +37,204 @@
   font-weight: bold;
 }
 
-.newPostCard{
-    height:100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url("https://serengetitech.com/wp-content/uploads/2022/06/shutterstock_1191637648-1.png" );
-     
-  
-    background-repeat: no-repeat;
-    margin-top: -80px;
-    
-  }
+.newPostCard {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+  flex-direction: column; /* Align items vertically */
+  background-image: url("https://serengetitech.com/wp-content/uploads/2022/06/shutterstock_1191637648-1.png");
+  background-repeat: no-repeat;
+  position: relative; /* Position relative for absolute positioning of canvas */
+  margin-top: -80px;
+}
 
-  .addPost {
-    display: flex;
- /* background: linear-gradient(to bottom right, #625cdb, #b25c1a);  */
-   
-    /* Adjust colors as needed */
-  }
-  
-  .postForm{
-    display: flex;
-    flex-direction: column;
-  }
+.addPost {
+  display: flex;
+}
 
-  .avatar{
-    width:50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 20px;
-  }
-  label{
-    display : flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+.postForm {
+  display: flex;
+  flex-direction: column;
+}
 
-  .addImg{
-    width:80px;
-    cursor:pointer
-  }
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
 
-  button{
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    color: white;
-    background-color: teal;
-    cursor: pointer;
-  }
-  .postInput{
-    height: 30px;
-    border:none;
-    margin-bottom: 10px;
-  }
+label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  
-  .left {
-    position: relative;
-  }
-  
-  .image {
-    max-width: 100%;
-    height: auto;
-  }
-  .canvas-container {
-    position: relative;
-    width: 500px; /* or any fixed width you desire */
-  }
-  
-  .canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-    
-  /* .canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-  } */
-.imgPost
-{
+.addImg {
+  width: 80px;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: teal;
+  cursor: pointer;
+}
+
+.postInput {
+  height: 30px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.left {
+  position: relative;
+}
+
+.image {
+  max-width: 100%; /* Limit the maximum width of the image */
+  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  max-height: 100%; /* Limit the maximum height of the image */
+  object-fit: contain; /* Ensure the image fits within its container */
+}
+
+.canvas {
+  position: absolute; /* Position the canvas relative to its container */
+  top: 0; /* Align the canvas to the top of its container */
+  left: 0; /* Align the canvas to the left of its container */
+  width: 100%; /* Occupy the full width of its container */
+  height: 100%; /* Occupy the full height of its container */
+  max-width: 100%; /* Limit the maximum width of the canvas */
+  max-height: 100%; /* Limit the maximum height of the canvas */
+}
+
+.imgPost {
   height: 200px;
   width: 200px;
   display: block;
-}  
-  
-  .rightButton{
-    padding :10px 20px;
-    font-weight: bold;
-  }
-  .rightInput{
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-  .friendInput{
-    
-    padding: 10px;
-    font-weight: bold;
-    border:none
-  }
-  .friends{
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
+}
 
-  .name{
-    font-weight: bold;
-  }
+.rightButton {
+  padding: 10px 20px;
+  font-weight: bold;
+}
 
-  h1{
-    font-size: 50px;
-    margin-top: -34%;
-  }
+.rightInput {
+  padding: 20px;
+  margin-bottom: 20px;
+}
 
-   
+.friendInput {
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+}
+
+.friends {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 50px;
+  margin-top: -34%;
+}
+
 .container {
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 0;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20;
 }
 
 @media (max-width: 768px) {
-    .footer .container {
-        width: 100%;
-    }
+  .footer .container {
+    width: 100%;
+  }
 }
-.image {
-  max-width: 100%;
-  height: auto;
-}
-.bg{
 
-  /* background-image: url('https://img.pikbest.com/wp/202344/burgundy-abstract-watercolor-background-aquamarine-and-gradient-with-droplet-texture_9931112.jpg!sw800'); */
-  height: 800px;
+.bg {
+  background-image: url("https://images.pexels.com/photos/2088205/pexels-photo-2088205.jpeg?auto=compress&cs=tinysrgb&w=600");
+  height: 120vh;
   background-repeat: no-repeat;
   background-size: cover;
-  
+  margin-top: -20px;
 }
 
 .row {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .col-md-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding: 0 15px;
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 15px;
 }
-.right{
-  margin-top: -20px;
+
+.right {
+  margin-top: 40px;
 }
 
 /* For screens smaller than 768px */
 @media (max-width: 768px) {
   .container {
-      width: 100%; /* Adjust the width for smaller screens */
+    width: 100%; /* Adjust the width for smaller screens */
   }
   .left {
-      margin-top: 20px; /* Adjust spacing for smaller screens */
+    margin-top: 20px; /* Adjust spacing for smaller screens */
   }
   .footer {
-      padding: 30px 0; /* Adjust padding for smaller screens */
+    padding: 30px 0; /* Adjust padding for smaller screens */
   }
   h1 {
-      font-size: 40px; /* Adjust font size for smaller screens */
-      margin-top: -30%; /* Adjust margin for smaller screens */
+    font-size: 40px; /* Adjust font size for smaller screens */
+    margin-top: -30%; /* Adjust margin for smaller screens */
   }
 }
 
 /* For screens smaller than 576px */
 @media (max-width: 576px) {
   .navbar span {
-      padding: 10px; /* Adjust padding for smaller screens */
-      font-size: 14px; /* Adjust font size for smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Adjust font size for smaller screens */
   }
   .postForm {
-      padding: 10px; /* Adjust padding for smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
   }
   .addImg {
-      width: 60px; /* Adjust width for smaller screens */
+    width: 60px; /* Adjust width for smaller screens */
   }
   .avatar {
-      width: 40px; /* Adjust width for smaller screens */
-      height: 40px; /* Adjust height for smaller screens */
+    width: 40px; /* Adjust width for smaller screens */
+    height: 40px; /* Adjust height for smaller screens */
   }
   button {
-      padding: 5px 8px; /* Adjust padding for smaller screens */
-      font-size: 14px; /* Adjust font size for smaller screens */
+    padding: 5px 8px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Adjust font size for smaller screens */
   }
   .postInput {
-      height: 25px; /* Adjust height for smaller screens */
+    height: 25px; /* Adjust height for smaller screens */
   }
   .footer {
-      padding: 20px 0; /* Adjust padding for smaller screens */
+    padding: 20px 0; /* Adjust padding for smaller screens */
   }
   h1 {
-      font-size: 30px; /* Adjust font size for smaller screens */
-      margin-top: -25%; /* Adjust margin for smaller screens */
+    font-size: 30px; /* Adjust font size for smaller screens */
+    margin-top: -25%; /* Adjust margin for smaller screens */
   }
 }
 
@@ -286,6 +266,3 @@ li:hover {
 .expression-text {
   margin-left: 10px; /* Add margin between emoji and text */
 }
-
-
-
